@@ -57,3 +57,5 @@ You don't need the sum of the exercises yet.
 The application must work regardless of the number of parts a course has, so make sure the application works if you add or remove parts of a course.
 
 Ensure that the console shows no errors!
+
+# Exercise Process
