@@ -43,9 +43,9 @@ const App = () => {
         header={course.name}
         partsList={course.parts.map(function (part) {
           return (
-            <>
+            <div key={part.id}>
               {part.name} {part.exercises} <br />
-            </>
+            </div>
           )
         })}
       />
