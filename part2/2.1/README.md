@@ -50,5 +50,11 @@ Hence, the Course component contains the components defined in the previous part
 The rendered page can, for example, look as follows:
 ![image](https://github.com/devstackweb3/osa2/assets/118926098/cc590d5e-6a88-4102-855c-f9e0b810f6ac)
 
+You don't need the sum of the exercises yet.
+
+The application must work regardless of the number of parts a course has, so make sure the application works if you add or remove parts of a course.
+
+Ensure that the console shows no errors!
+
 # Exercise Process
 Struggled with understanding the rule's exercise established with architectural following pathway composition. 
