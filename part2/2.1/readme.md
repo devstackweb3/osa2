@@ -52,7 +52,7 @@ Hence, the Course component contains the components defined in the previous part
 ### Functionnal programming operators (filter, map, find)
 It's a method permitting to gain time and efficiency on programming. 
 Efficiency: 
-Using already pre-built functions permitting to loop over basic use cases. 
+Using already pre-built functions permitting to loop over basic use cases, reduces bugs apparition. 
 Time:
 Shortens the functions used with already pre-built code interpretation functions. 
 
@@ -64,6 +64,10 @@ return x * 3
 let waffle = triple
 waffle(30)
 ```
+
+### Higher-order functions
+This principle of use, is a manner to involve the use of a function inside another one. The higher-ordered function includes the use of another function. 
+
 
 The rendered page can, for example, look as follows:
 ![image](https://github.com/devstackweb3/osa2/assets/118926098/a8e6fa3d-782f-415e-9b33-1e2760e1ee8b)
