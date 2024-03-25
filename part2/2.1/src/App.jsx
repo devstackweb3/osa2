@@ -1,27 +1,16 @@
 /* eslint-disable react/prop-types */
 const Header = ({ title }) => <h1>{title}</h1>
 
-const Part = ({ partName, partEx }) => (
-  <p>
-    {partName} {partEx}
-  </p>
+const Part = ({ partsList }) => (
+  <div>
+    <div>{partsList}</div>
+  </div>
 )
 
 const Course = (props) => (
   <>
     <Header title={props.header} />
-    <Part
-      partName={props.partsList[0].name}
-      partEx={props.partsList[0].exercises}
-    />
-    <Part
-      partName={props.partsList[1].name}
-      partEx={props.partsList[1].exercises}
-    />
-    <Part
-      partName={props.partsList[2].name}
-      partEx={props.partsList[2].exercises}
-    />
+    <Part partsList={props.partsList} />
   </>
 )
 
@@ -50,7 +39,16 @@ const App = () => {
   //console.log(course.parts[0])
   return (
     <div>
-      <Course header={course.name} partsList={course.parts} />
+      <Course
+        header={course.name}
+        partsList={course.parts.map(function (part) {
+          return (
+            <>
+              {part.name} {part.exercises} <br />
+            </>
+          )
+        })}
+      />
     </div>
   )
 }
