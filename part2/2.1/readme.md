@@ -55,7 +55,7 @@ Efficiency:
 Using already pre-built functions permitting to loop over basic use cases, reduces bugs apparition. 
 Time:
 Shortens the functions used with already pre-built code interpretation functions. 
-
+**Example**
 ```
 //Function is considered as a value
 let triple = function(x) {
@@ -67,8 +67,17 @@ waffle(30)
 
 ### Higher-order functions
 This principle of use, is a manner to involve the use of a function inside another one. The higher-ordered function includes the use of another function. 
-
-
+**Example**
+```
+const animals = [
+{name: 'bryan', species: 'dog'},
+{name: 'john', species: 'cat'},
+{name: 'lucas', species: 'dog'},
+{name: 'bob', species: 'fish'}
+]
+//filter function uses only 1 argument
+const dogs = animals.filter(function(animal){return animal.species === 'dog'})
+```
 The rendered page can, for example, look as follows:
 ![image](https://github.com/devstackweb3/osa2/assets/118926098/a8e6fa3d-782f-415e-9b33-1e2760e1ee8b)
 
