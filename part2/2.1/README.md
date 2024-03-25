@@ -1,8 +1,54 @@
-# React + Vite
+# Exercise Objective
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Let's change the App component like so:
 
-Currently, two official plugins are available:
+```
+const App = () => {
+  const course = {
+    id: 1,
+    name: 'Half Stack application development',
+    parts: [
+      {
+        name: 'Fundamentals of React',
+        exercises: 10,
+        id: 1
+      },
+      {
+        name: 'Using props to pass data',
+        exercises: 7,
+        id: 2
+      },
+      {
+        name: 'State of a component',
+        exercises: 14,
+        id: 3
+      }
+    ]
+  }
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+  return <Course course={course} />
+}
+```
+
+export default Appcopy
+Define a component responsible for formatting a single course called Course.
+
+The component structure of the application can be, for example, the following (architectural overview):
+```
+App
+  Course
+    Header
+    Content
+      Part
+      Part
+      ...
+copy
+```
+
+Hence, the Course component contains the components defined in the previous part, which are responsible for rendering the course name and its parts.
+
+The rendered page can, for example, look as follows:
+![image](https://github.com/devstackweb3/osa2/assets/118926098/cc590d5e-6a88-4102-855c-f9e0b810f6ac)
+
+# Exercise Process
+Struggled with understanding the rule's exercise established with architectural following pathway composition. 
