@@ -32,4 +32,4 @@ const course = {
 ...other code...
 ```
 
-I then decided to start again from scratch another approach splitting the approach, in 2 established models of data extraction. First one by using the map() method with which the back side functionning of new array generation simplifies access of data properties grouped, and in the 2nd approach to sum the values with the reduce method.
+I then decided to start again from scratch another approach splitting the approach, in 2 established models of data extraction. First one by using the map() method with which the back side functionning of new array generation simplifies access of data properties grouped, and in the 2nd approach to sum the values with the [reduce](https://sentry.io/answers/how-to-find-the-sum-of-an-array-of-numbers/#:~:text=Using%20reduce()&text=()%20array%20method%3A-,const%20arr%20%3D%20%5B23%2C%2034%2C%2077%2C%2099%2C,each%20element%20of%20the%20array.) method.
