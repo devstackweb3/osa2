@@ -62,5 +62,7 @@ The application must work regardless of the number of parts a course has, so mak
 
 Ensure that the console shows no errors!
 
+[Helsinki University Exercise](https://fullstackopen.com/en/part2/rendering_a_collection_modules#anti-pattern-array-indexes-as-keys)
+
 # Exercise Process
 Struggled with understanding the rule's exercise established with architectural following pathway composition. 
