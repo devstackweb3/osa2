@@ -14,4 +14,5 @@ const total = parts.reduce((s, p) => {
 })
 ```
 Not working? : Use your search engine to look up how reduce is used in an Object Array.
+
 [Helsinki University Exercise](https://fullstackopen.com/en/part2/rendering_a_collection_modules#anti-pattern-array-indexes-as-keys)
