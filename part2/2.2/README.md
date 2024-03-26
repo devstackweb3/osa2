@@ -6,4 +6,30 @@ Show also the sum of the exercises of the course.
 # Exercise Process
 I struggled at first glance to destructure the general sum process. I was firstly oriented around a looping method mentionned [here](https://codinhood.com/nano/js/sum-property-values-object/#:~:text=Another%20interesting%20way%20to%20sum,loop%20to%20the%20total%20variable.) using a compiled method of map iteration and sum method. But struggled to extract the positioning data of **exercises** stated in the object **part**=[0,1,2...] of **parts** array.
 
+```
+...some code...
+const course = {
+    id: 1,
+    name: 'Half Stack application development',
+    parts: [
+      {
+        id: 1,
+        name: 'Fundamentals of React',
+        exercises: 10,
+      },
+      {
+        id: 2,
+        name: 'Using props to pass data',
+        exercises: 7,
+      },
+      {
+        id: 3,
+        name: 'State of a component',
+        exercises: 14,
+      },
+    ],
+  }
+...other code...
+```
+
 I then decided to start again from scratch another approach splitting the approach, in 2 established models of data extraction. First one by using the map() method with which the back side functionning of new array generation simplifies access of data properties grouped, and in the 2nd approach to sum the values with the reduce method.
