@@ -1,8 +1,18 @@
-# React + Vite
+# Exercise Objective 
+If you haven't done so already, calculate the sum of exercises with the array method reduce.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Pro tip: when your code looks as follows:
+```
+const total = 
+  parts.reduce((s, p) => someMagicHere)
+```
+and does not work, it's worth it to use console.log, which requires the arrow function to be written in its longer form:
+```
+const total = parts.reduce((s, p) => {
+  console.log('what is happening', s, p)
+  return someMagicHere 
+})
+```
+Not working? : Use your search engine to look up how reduce is used in an Object Array.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[Helsinki University Exercise](https://fullstackopen.com/en/part2/rendering_a_collection_modules#anti-pattern-array-indexes-as-keys)
