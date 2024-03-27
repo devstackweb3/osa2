@@ -84,3 +84,38 @@ I manage to display all the exercises without being able to assign separation di
       />
 ```
 PROBLEM IDENTIFICATION: This is because the **title id key** *is not linked to* the **object** representing the **exercise list**.
+
+## Issue 2 | Destructuring overview of results
+The id course connexion has well been corrected with the following code: 
+
+```
+const App = () => {
+...some code ...
+return
+<div>
+<Course
+        header={courses.map(function (course) {
+          return <div key={course.id}>{course.name}</div>
+        })}
+        partsList={courses.map(function (course) {
+          let exercises = course.parts.map(function (part) {
+            return (
+              <div key={part.id}>
+                {part.name} {part.exercises}
+              </div>
+            )
+          })
+          return (
+            <div key={course.id}>
+              <h1>{course.name}</h1> <br /> {exercises}
+            </div>
+          )
+        })}
+      />
+}
+</div>
+...some code...
+```
+
+Now a new issue considering the structured code in smaller components displayed accross the app file emerges. 
+
