@@ -145,6 +145,8 @@ export default App
 ```
 ### Possible solution | useRef & createRef differences
 **useRef:** used in functionnal components since 16.8 REACT Version
+
 **createRef:** used in class components
+
 The objective is to use useRef to refer to id main title of exercises list. 
 
