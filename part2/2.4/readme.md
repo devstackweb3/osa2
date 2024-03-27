@@ -58,3 +58,29 @@ The application can, for example, look like this:
 ![image](https://github.com/devstackweb3/osa2/assets/118926098/a96aada2-c37e-4578-aeb0-6baf505f2f20)
 
 # Exercise Process
+
+## Issue 1 | Displaying all titles & exercices once
+### ALL THE EXERCISES ARE GROUPED TOGETHER IN A LIST WITHOUT ANY ASSIGNMENT DISTINCTIONS:
+I manage to display all the exercises without being able to assign separation distinctions between title and list of assigned exercises. 
+This is because the title id key is not linked to the object representing the exercise list. 
+
+```
+<Course
+        header={courses.map(function (course) {
+          return <div key={course.id}>{course.name}</div>
+        })}
+        partsList={courses.map(function (course) {
+          let exercises = course.parts.map(function (part) {
+            return (
+              <div key={part.id}>
+                {part.name} {part.exercises}
+              </div>
+            )
+          })
+          return exercises
+        })}
+        /*exercises={courses.parts.map(function (part) {
+          return part.exercises
+        })}*/
+      />
+```
