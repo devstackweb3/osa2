@@ -61,8 +61,7 @@ The application can, for example, look like this:
 
 ## Issue 1 | Displaying all titles & exercices once
 ### ALL THE EXERCISES ARE GROUPED TOGETHER IN A LIST WITHOUT ANY ASSIGNMENT DISTINCTIONS:
-I manage to display all the exercises without being able to assign separation distinctions between title and list of assigned exercises. 
-Problem Identification: This is because the **title id key** *is not linked to* the **object** representing the **exercise list**. 
+I manage to display all the exercises without being able to assign separation distinctions between title and list of assigned exercises.  
 
 ```
 <Course
@@ -84,3 +83,4 @@ Problem Identification: This is because the **title id key** *is not linked to* 
         })}*/
       />
 ```
+PROBLEM IDENTIFICATION: This is because the **title id key** *is not linked to* the **object** representing the **exercise list**.
