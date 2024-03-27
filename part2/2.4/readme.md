@@ -116,6 +116,31 @@ return
 </div>
 ...some code...
 ```
+However this version shows all data grouped in same property named:"partsList". The aim is to stay in the same architectural components organisation with a header, part and course components taking properties from same data array source.
+The issue is:
+How can I link local components id's from **header** to **part** within the parent component called course?
+```
+const Header = ({ title }) => <h1>{title}</h1>
 
-Now a new issue considering the structured code in smaller components displayed accross the app file emerges. 
+const Part = ({ partsList }) => (
+  <div>
+    <div>{partsList}</div>
+  </div>
+)
+
+const Course = (props) => (
+  <>
+    <Header title={props.header} />
+    <Part partsList={props.partsList} />
+    //Here the issue is detected. The header property is not linked to the mapping made on partsList exercises. 
+  </>
+)
+
+const App = () => {
+
+...some code...
+
+}
+export default App
+```
 
