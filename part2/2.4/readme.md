@@ -148,5 +148,5 @@ export default App
 
 **createRef:** used in class components
 
-The objective is to use useRef to refer to id main title of exercises list. 
+The objective is to use useRef to refer to id main title of exercises list.
 
